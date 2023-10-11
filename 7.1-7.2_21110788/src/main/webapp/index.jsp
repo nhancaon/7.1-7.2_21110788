@@ -9,22 +9,27 @@
 <link rel="stylesheet" href="styles/main.css" type="text/css" />
 </head>
 <body>
-	<c:if test="${emailAddress!=null}">
-		<p>User Email: ${emailAddress}</p>
-		<br>
-	</c:if>
-	
-	<h2>List of albums</h2>
-	<h1></h1>
-	<p>
-		<a href="download?action=checkUser&amp;productCode=8601"> 86 (the
-			band) - True Life Songs and Pictures ></a><br> <a
-			href="download?action=checkUser&amp;productCode=pf01"> Paddlefoot
-			The First CD ></a><br> <a
-			href="download?action=checkUser&amp;productCode=pf02"> Paddlefoot
-			The Second CD </a><br> <a
-			href="download?action=checkUser&amp;productCode=jr01"> Joe Rut
-			Genuine Wood Grained Finish </a>
-	</p>
+<h2>List of albums</h2>
+<c:if test="${emailAddress!=null}">
+			<p class="user-email">User Email: ${emailAddress}</p>
+			<br>
+		</c:if>
+	<div class="container">
+		
+
+		
+		<h1></h1>
+		<p>
+			<a class="album-link" href="download?action=checkUser&amp;productCode=8601"> 86 (the
+				band) - True Life Songs and Pictures ></a><br> <a class="album-link"
+				href="download?action=checkUser&amp;productCode=pf01">
+				Paddlefoot The First CD ></a><br> <a class="album-link"
+				href="download?action=checkUser&amp;productCode=pf02">
+				Paddlefoot The Second CD </a><br> <a class="album-link"
+				href="download?action=checkUser&amp;productCode=jr01"> Joe Rut
+				Genuine Wood Grained Finish </a>
+		</p>
+	</div>
+
 </body>
 </html>

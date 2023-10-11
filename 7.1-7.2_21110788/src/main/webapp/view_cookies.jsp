@@ -13,7 +13,7 @@
 browser is sending to the current server.</p>
 
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<table>
+<table class="styled-table">
   <tr>
     <th>Name</th>
     <th>Value</th>
